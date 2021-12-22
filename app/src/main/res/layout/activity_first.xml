@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".firstline.FirstActivity"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/button_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="打开网页"
+        />
+
+    <Button
+        android:id="@+id/bt_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="phone"/>
+
+    <Button
+        android:id="@+id/bt_jump_second"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:text="跳转SecondActivity"/>
+
+    <Button
+        android:id="@+id/bt_self"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="跳转自己"/>
+
+    <Button
+        android:id="@+id/bt_jump_third"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:text="跳转ThirdActivity"/>
+
+    <Button
+        android:id="@+id/bt_best_start"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="最佳启动方式"/>
+
+</LinearLayout>

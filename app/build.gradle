@@ -1,0 +1,45 @@
+plugins {
+    //应用一个插件，application表示这是一个应用程序模块，library表示一个库模块
+    id 'com.android.application'
+}
+
+android {
+    //编译版本
+    compileSdk 31
+
+    defaultConfig {
+        applicationId "com.example.androidprocess"
+        //最低兼容版本
+        minSdk 23
+        //目标版本，此版本以下的功能都能使用
+        targetSdk 31
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            //是否混淆
+            minifyEnabled false
+            //指定混淆使用的规则文件
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+//依赖关系
+dependencies {
+
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'com.google.android.material:material:1.3.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    testImplementation 'junit:junit:4.+'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+}
