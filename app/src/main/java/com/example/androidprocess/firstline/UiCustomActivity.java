@@ -18,5 +18,6 @@ public class UiCustomActivity extends AppCompatActivity {
         if (actionBar != null) {
             actionBar.hide();
         }
+        
     }
 }
