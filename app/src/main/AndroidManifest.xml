@@ -11,7 +11,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidProcess">
         <activity
-            android:name=".firstline.UiCustomActivity"
+            android:name=".firstline.chapter3.ChapterThreeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".firstline.chapter3.ListViewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".firstline.chapter3.UiCustomActivity"
             android:exported="false" />
         <activity
             android:name=".firstline.BestStartActivity"

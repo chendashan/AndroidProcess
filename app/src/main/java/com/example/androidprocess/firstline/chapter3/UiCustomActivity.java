@@ -1,4 +1,4 @@
-package com.example.androidprocess.firstline;
+package com.example.androidprocess.firstline.chapter3;
 
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;

@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <com.example.androidprocess.firstline.TitleLayout
+    <com.example.androidprocess.firstline.chapter3.TitleLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 

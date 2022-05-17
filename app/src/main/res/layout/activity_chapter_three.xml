@@ -1,28 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".firstline.FirstLineCodeActivity"
+    tools:context=".firstline.chapter3.ChapterThreeActivity"
     android:orientation="vertical">
 
     <Button
-        android:id="@+id/bt_activity_usage"
+        android:id="@+id/bt_ui_custom"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="活动的基本用法"/>
+        android:text="自定义控件" />
 
     <Button
-        android:id="@+id/bt_activity_life"
+        android:id="@+id/bt_ui_listview"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="活动的生命周期"/>
-
-    <Button
-        android:id="@+id/bt_activity_ui"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="第三章 UI开发"/>
+        android:text="ListView" />
 
 </LinearLayout>

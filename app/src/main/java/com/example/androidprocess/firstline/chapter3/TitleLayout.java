@@ -1,4 +1,4 @@
-package com.example.androidprocess.firstline;
+package com.example.androidprocess.firstline.chapter3;
 
 import android.app.Activity;
 import android.content.Context;
