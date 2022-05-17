@@ -11,6 +11,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidProcess">
         <activity
+            android:name=".firstline.chapter3.UiMessageActivity"
+            android:exported="false" />
+        <activity
+            android:name=".firstline.chapter3.RecyclerViewActivity"
+            android:exported="false" />
+        <activity
             android:name=".firstline.chapter3.ChapterThreeActivity"
             android:exported="false" />
         <activity

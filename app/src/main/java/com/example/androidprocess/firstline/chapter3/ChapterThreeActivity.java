@@ -26,6 +26,10 @@ public class ChapterThreeActivity extends AppCompatActivity implements View.OnCl
         btCustom.setOnClickListener(this);
         Button btListView = findViewById(R.id.bt_ui_listview);
         btListView.setOnClickListener(this);
+        Button btRecView = findViewById(R.id.bt_ui_recycle_vew);
+        btRecView.setOnClickListener(this);
+        Button btChat = findViewById(R.id.bt_ui_message);
+        btChat.setOnClickListener(this);
 
     }
 
@@ -39,6 +43,14 @@ public class ChapterThreeActivity extends AppCompatActivity implements View.OnCl
             case R.id.bt_ui_listview:
                 Intent intentLv = new Intent(ChapterThreeActivity.this, ListViewActivity.class);
                 startActivity(intentLv);
+                break;
+            case R.id.bt_ui_recycle_vew:
+                Intent intentRcv = new Intent(ChapterThreeActivity.this, RecyclerViewActivity.class);
+                startActivity(intentRcv);
+                break;
+            case R.id.bt_ui_message:
+                Intent intentChat = new Intent(ChapterThreeActivity.this, UiMessageActivity.class);
+                startActivity(intentChat);
                 break;
             default:
                 break;

@@ -16,6 +16,21 @@
         android:id="@+id/bt_ui_listview"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:textAllCaps="false"
         android:text="ListView" />
+
+    <Button
+        android:id="@+id/bt_ui_recycle_vew"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:text="RecyclerView" />
+
+    <Button
+        android:id="@+id/bt_ui_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:text="聊天界面" />
 
 </LinearLayout>
