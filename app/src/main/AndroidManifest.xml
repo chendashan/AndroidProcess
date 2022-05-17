@@ -11,6 +11,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidProcess">
         <activity
+            android:name=".firstline.chapter4.ChapterFourActivity"
+            android:exported="false" />
+        <activity
+            android:name=".firstline.ChapterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".firstline.chapter4.FragmentActivity"
+            android:exported="false" />
+        <activity
             android:name=".firstline.chapter3.UiMessageActivity"
             android:exported="false" />
         <activity

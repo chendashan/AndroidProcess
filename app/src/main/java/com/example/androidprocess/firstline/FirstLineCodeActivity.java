@@ -8,6 +8,7 @@ import android.widget.Button;
 
 import com.example.androidprocess.R;
 import com.example.androidprocess.firstline.chapter3.ChapterThreeActivity;
+import com.example.androidprocess.firstline.chapter4.ChapterFourActivity;
 
 public class FirstLineCodeActivity extends BaseLineActivity implements View.OnClickListener{
 
@@ -25,6 +26,8 @@ public class FirstLineCodeActivity extends BaseLineActivity implements View.OnCl
         btLife.setOnClickListener(this);
         Button btUi = findViewById(R.id.bt_activity_ui);
         btUi.setOnClickListener(this);
+        Button btFragment = findViewById(R.id.bt_activity_fragment);
+        btFragment.setOnClickListener(this);
     }
 
     @Override
@@ -41,6 +44,10 @@ public class FirstLineCodeActivity extends BaseLineActivity implements View.OnCl
             case R.id.bt_activity_ui:
                 Intent inUi = new Intent(this, ChapterThreeActivity.class);
                 startActivity(inUi);
+                break;
+            case R.id.bt_activity_fragment:
+                Intent intentFragment = new Intent(this, ChapterFourActivity.class);
+                startActivity(intentFragment);
                 break;
 
             default:
