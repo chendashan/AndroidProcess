@@ -13,16 +13,24 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidProcess">
+        <activity
+            android:name=".firstline.chapter5.UserCenterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".firstline.chapter5.HomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".firstline.chapter5.LoginActivity"
+            android:exported="false" />
 
         <receiver
             android:name=".firstline.chapter5.MyBroadcastReceiver"
             android:enabled="true"
             android:exported="true">
             <intent-filter>
-                <action android:name="com.example.androidprocess.MY_BROADCAST"/>
+                <action android:name="com.example.androidprocess.MY_BROADCAST" />
             </intent-filter>
         </receiver>
-
         <receiver
             android:name=".firstline.chapter5.BootCompleteReceiver"
             android:enabled="true"

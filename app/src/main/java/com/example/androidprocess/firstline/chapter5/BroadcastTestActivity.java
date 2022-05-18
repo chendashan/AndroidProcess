@@ -1,6 +1,7 @@
 package com.example.androidprocess.firstline.chapter5;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.localbroadcastmanager.content.LocalBroadcastManager;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;
@@ -20,6 +21,10 @@ public class BroadcastTestActivity extends AppCompatActivity {
     private NetworkChangeReceive networkReceive;
     private IntentFilter intentFilter;
 
+    private LocalReceiver localReceiver;
+    private LocalBroadcastManager localBroadcastManager;
+    private IntentFilter localFilter;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -37,12 +42,27 @@ public class BroadcastTestActivity extends AppCompatActivity {
             intent.setPackage(getPackageName());
             sendBroadcast(intent);
         });
+
+
+        //发送本地广播
+        localBroadcastManager = LocalBroadcastManager.getInstance(this);
+        localFilter = new IntentFilter();
+        localFilter.addAction("com.example.androidprocess.LOCAL_BROADCAST");
+        localReceiver = new LocalReceiver();
+        localBroadcastManager.registerReceiver(localReceiver, localFilter);
+
+        Button btLocalBroadcast = findViewById(R.id.bt_local_send);
+        btLocalBroadcast.setOnClickListener(v -> {
+            Intent intent = new Intent("com.example.androidprocess.LOCAL_BROADCAST");
+            localBroadcastManager.sendBroadcast(intent);
+        });
     }
 
     @Override
     protected void onDestroy() {
         super.onDestroy();
         unregisterReceiver(networkReceive);
+        localBroadcastManager.unregisterReceiver(localReceiver);
     }
 
     class NetworkChangeReceive extends BroadcastReceiver {
@@ -61,6 +81,14 @@ public class BroadcastTestActivity extends AppCompatActivity {
             }
 
 
+        }
+    }
+
+    class LocalReceiver extends BroadcastReceiver {
+
+        @Override
+        public void onReceive(Context context, Intent intent) {
+            Toast.makeText(context, "received local broadcast", Toast.LENGTH_SHORT).show();
         }
     }
 
