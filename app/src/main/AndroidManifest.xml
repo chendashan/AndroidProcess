@@ -11,6 +11,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidProcess">
         <activity
+            android:name=".firstline.chapter4.NewsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".firstline.chapter4.NewsContentActivity"
+            android:exported="false" />
+        <activity
             android:name=".firstline.chapter4.ChapterFourActivity"
             android:exported="false" />
         <activity

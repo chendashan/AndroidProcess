@@ -6,6 +6,7 @@
     tools:context=".firstline.chapter4.LeftFragment">
 
     <Button
+        android:id="@+id/bt_fragment_left"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Left Fragment"

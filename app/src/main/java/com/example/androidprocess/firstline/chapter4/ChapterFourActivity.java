@@ -13,7 +13,7 @@ public class ChapterFourActivity extends ChapterActivity {
         setTitle("第4章 Fragment");
 
         addChapter("碎片的简单使用", FragmentActivity.class);
-        addChapter("动态添加碎片", FragmentActivity.class);
+        addChapter("简易新闻界面", NewsActivity.class);
 
         showChapterList();
     }
