@@ -16,6 +16,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidProcess">
+        <provider
+            android:name=".firstline.chapter7.DatabaseProvider"
+            android:authorities="com.example.androidprocess.provider"
+            android:enabled="true"
+            android:exported="true">
+
+        </provider>
+
         <activity
             android:name=".firstline.chapter7.ContactsTestActivity"
             android:exported="false" />
