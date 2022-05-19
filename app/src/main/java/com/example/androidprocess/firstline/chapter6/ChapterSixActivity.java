@@ -12,6 +12,8 @@ public class ChapterSixActivity extends ChapterActivity {
 
         addChapter("文件存储", FilePersistenceActivity.class);
         addChapter("SharedPreference", SharedPreferenceActivity.class);
+        addChapter("DataBase", DataBaseActivity.class);
+        addChapter("LitePal", LitePalActivity.class);
 
         showChapterList();
     }
