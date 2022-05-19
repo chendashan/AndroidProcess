@@ -9,6 +9,7 @@ import android.widget.Button;
 import com.example.androidprocess.R;
 import com.example.androidprocess.firstline.chapter3.ChapterThreeActivity;
 import com.example.androidprocess.firstline.chapter4.ChapterFourActivity;
+import com.example.androidprocess.firstline.chapter6.ChapterSixActivity;
 
 public class FirstLineCodeActivity extends BaseLineActivity implements View.OnClickListener{
 
@@ -28,6 +29,8 @@ public class FirstLineCodeActivity extends BaseLineActivity implements View.OnCl
         btUi.setOnClickListener(this);
         Button btFragment = findViewById(R.id.bt_activity_fragment);
         btFragment.setOnClickListener(this);
+        Button btSix = findViewById(R.id.bt_line_data);
+        btSix.setOnClickListener(this);
     }
 
     @Override
@@ -48,6 +51,10 @@ public class FirstLineCodeActivity extends BaseLineActivity implements View.OnCl
             case R.id.bt_activity_fragment:
                 Intent intentFragment = new Intent(this, ChapterFourActivity.class);
                 startActivity(intentFragment);
+                break;
+            case R.id.bt_line_data:
+                Intent intentData = new Intent(this, ChapterSixActivity.class);
+                startActivity(intentData);
                 break;
 
             default:

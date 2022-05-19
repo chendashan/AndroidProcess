@@ -14,6 +14,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidProcess">
         <activity
+            android:name=".firstline.chapter6.SharedPreferenceActivity"
+            android:exported="false" />
+        <activity
+            android:name=".firstline.chapter6.ChapterSixActivity"
+            android:exported="false" />
+        <activity
+            android:name=".firstline.chapter6.FilePersistenceActivity"
+            android:exported="false" />
+        <activity
             android:name=".firstline.chapter5.UserCenterActivity"
             android:exported="false" />
         <activity

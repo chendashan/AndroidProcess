@@ -3,17 +3,29 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/cds/AndroidStudioProjects/AndroidProcess/app/src/main/res/layout/activity_broadcast_test.xml" value="0.5208333333333334" />
-        <entry key="..\:/Users/cds/AndroidStudioProjects/AndroidProcess/app/src/main/res/layout/activity_chapter.xml" value="0.5208333333333334" />
-        <entry key="..\:/Users/cds/AndroidStudioProjects/AndroidProcess/app/src/main/res/layout/activity_first_line_code.xml" value="0.5208333333333334" />
-        <entry key="..\:/Users/cds/AndroidStudioProjects/AndroidProcess/app/src/main/res/layout/activity_fragment.xml" value="0.5208333333333334" />
-        <entry key="..\:/Users/cds/AndroidStudioProjects/AndroidProcess/app/src/main/res/layout/activity_home.xml" value="0.33" />
-        <entry key="..\:/Users/cds/AndroidStudioProjects/AndroidProcess/app/src/main/res/layout/activity_login.xml" value="0.33" />
-        <entry key="..\:/Users/cds/AndroidStudioProjects/AndroidProcess/app/src/main/res/layout/activity_user_center.xml" value="0.33" />
-        <entry key="..\:/Users/cds/AndroidStudioProjects/AndroidProcess/app/src/main/res/layout/fragment_left.xml" value="0.5208333333333334" />
-        <entry key="..\:/Users/cds/AndroidStudioProjects/AndroidProcess/app/src/main/res/layout/fragment_right.xml" value="0.5208333333333334" />
-        <entry key="..\:/Users/cds/AndroidStudioProjects/AndroidProcess/app/src/main/res/layout/item_chapter.xml" value="0.5208333333333334" />
-        <entry key="..\:/Users/cds/AndroidStudioProjects/AndroidProcess/app/src/main/res/layout/item_message.xml" value="0.3411458333333333" />
+        <entry key="..\:/Android Project/My/AndroidProcess/app/src/main/res/drawable/ic_launcher_background.xml" value="0.21" />
+        <entry key="..\:/Android Project/My/AndroidProcess/app/src/main/res/layout/activity_broadcast_test.xml" value="0.23385416666666667" />
+        <entry key="..\:/Android Project/My/AndroidProcess/app/src/main/res/layout/activity_chapter_six.xml" value="0.19067028985507245" />
+        <entry key="..\:/Android Project/My/AndroidProcess/app/src/main/res/layout/activity_chapter_three.xml" value="0.36614583333333334" />
+        <entry key="..\:/Android Project/My/AndroidProcess/app/src/main/res/layout/activity_file_persistence.xml" value="0.2515625" />
+        <entry key="..\:/Android Project/My/AndroidProcess/app/src/main/res/layout/activity_first_line_code.xml" value="0.36614583333333334" />
+        <entry key="..\:/Android Project/My/AndroidProcess/app/src/main/res/layout/activity_fragment.xml" value="0.26614583333333336" />
+        <entry key="..\:/Android Project/My/AndroidProcess/app/src/main/res/layout/activity_list_view.xml" value="0.36614583333333334" />
+        <entry key="..\:/Android Project/My/AndroidProcess/app/src/main/res/layout/activity_login.xml" value="0.23822463768115942" />
+        <entry key="..\:/Android Project/My/AndroidProcess/app/src/main/res/layout/activity_news.xml" value="0.22" />
+        <entry key="..\:/Android Project/My/AndroidProcess/app/src/main/res/layout/activity_news_content.xml" value="0.27760416666666665" />
+        <entry key="..\:/Android Project/My/AndroidProcess/app/src/main/res/layout/activity_recycler_view.xml" value="0.2421875" />
+        <entry key="..\:/Android Project/My/AndroidProcess/app/src/main/res/layout/activity_shared_perference.xml" value="0.23278985507246377" />
+        <entry key="..\:/Android Project/My/AndroidProcess/app/src/main/res/layout/activity_ui_best.xml" value="0.2421875" />
+        <entry key="..\:/Android Project/My/AndroidProcess/app/src/main/res/layout/activity_ui_custom.xml" value="0.36614583333333334" />
+        <entry key="..\:/Android Project/My/AndroidProcess/app/src/main/res/layout/fragment_another_right.xml" value="0.26614583333333336" />
+        <entry key="..\:/Android Project/My/AndroidProcess/app/src/main/res/layout/fragment_left.xml" value="0.26614583333333336" />
+        <entry key="..\:/Android Project/My/AndroidProcess/app/src/main/res/layout/fragment_news_title.xml" value="0.27760416666666665" />
+        <entry key="..\:/Android Project/My/AndroidProcess/app/src/main/res/layout/item_fruit.xml" value="0.24947916666666667" />
+        <entry key="..\:/Android Project/My/AndroidProcess/app/src/main/res/layout/item_fruit_recycle.xml" value="0.2421875" />
+        <entry key="..\:/Android Project/My/AndroidProcess/app/src/main/res/layout/item_message.xml" value="0.24114583333333334" />
+        <entry key="..\:/Android Project/My/AndroidProcess/app/src/main/res/layout/item_news_title.xml" value="0.27760416666666665" />
+        <entry key="..\:/Android Project/My/AndroidProcess/app/src/main/res/layout/news_content_frag.xml" value="0.240625" />
       </map>
     </option>
   </component>
