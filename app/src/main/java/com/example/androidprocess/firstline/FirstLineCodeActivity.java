@@ -10,6 +10,7 @@ import com.example.androidprocess.R;
 import com.example.androidprocess.firstline.chapter3.ChapterThreeActivity;
 import com.example.androidprocess.firstline.chapter4.ChapterFourActivity;
 import com.example.androidprocess.firstline.chapter6.ChapterSixActivity;
+import com.example.androidprocess.firstline.chapter7.ChapterSevenActivity;
 
 public class FirstLineCodeActivity extends BaseLineActivity implements View.OnClickListener{
 
@@ -31,6 +32,8 @@ public class FirstLineCodeActivity extends BaseLineActivity implements View.OnCl
         btFragment.setOnClickListener(this);
         Button btSix = findViewById(R.id.bt_line_data);
         btSix.setOnClickListener(this);
+        Button btContent = findViewById(R.id.bt_line_content);
+        btContent.setOnClickListener(this);
     }
 
     @Override
@@ -55,6 +58,10 @@ public class FirstLineCodeActivity extends BaseLineActivity implements View.OnCl
             case R.id.bt_line_data:
                 Intent intentData = new Intent(this, ChapterSixActivity.class);
                 startActivity(intentData);
+                break;
+            case R.id.bt_line_content:
+                Intent intentContent = new Intent(this, ChapterSevenActivity.class);
+                startActivity(intentContent);
                 break;
 
             default:

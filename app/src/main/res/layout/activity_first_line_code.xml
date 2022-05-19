@@ -38,4 +38,10 @@
         android:layout_height="wrap_content"
         android:text="第5章 数据存储"/>
 
+    <Button
+        android:id="@+id/bt_line_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="第6章 内容提供器"/>
+
 </LinearLayout>

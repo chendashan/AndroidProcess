@@ -5,6 +5,8 @@
 
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
 
     <application
         android:name="org.litepal.LitePalApplication"
@@ -14,6 +16,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidProcess">
+        <activity
+            android:name=".firstline.chapter7.ContactsTestActivity"
+            android:exported="false" />
+        <activity
+            android:name=".firstline.chapter7.ChapterSevenActivity"
+            android:exported="false" />
+        <activity
+            android:name=".firstline.chapter7.RunPermissionActivity"
+            android:exported="false" />
         <activity
             android:name=".firstline.chapter6.LitePalActivity"
             android:exported="false" />
