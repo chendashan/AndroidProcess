@@ -7,6 +7,7 @@
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
     <uses-permission android:name="android.permission.CALL_PHONE" />
     <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.VIBRATE"/>
 
     <application
         android:name="org.litepal.LitePalApplication"
@@ -16,13 +17,18 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidProcess">
+        <activity
+            android:name=".firstline.chapter8.NotificationDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".firstline.chapter8.NotificationTestActivity"
+            android:exported="false" />
+
         <provider
             android:name=".firstline.chapter7.DatabaseProvider"
             android:authorities="com.example.androidprocess.provider"
             android:enabled="true"
-            android:exported="true">
-
-        </provider>
+            android:exported="true" />
 
         <activity
             android:name=".firstline.chapter7.ContactsTestActivity"
