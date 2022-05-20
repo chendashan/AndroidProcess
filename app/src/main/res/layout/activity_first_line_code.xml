@@ -5,30 +5,36 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".firstline.FirstLineCodeActivity"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:paddingStart="40dp"
+    android:paddingEnd="40dp">
 
     <Button
         android:id="@+id/bt_activity_usage"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
         android:text="活动的基本用法"/>
 
     <Button
         android:id="@+id/bt_activity_life"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
         android:text="活动的生命周期"/>
 
     <Button
         android:id="@+id/bt_activity_ui"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
         android:text="第3章 UI开发"/>
 
     <Button
         android:id="@+id/bt_activity_fragment"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
         android:text="第4章 Fragment、第5章 广播"
         android:textAllCaps="false"/>
 
@@ -36,12 +42,21 @@
         android:id="@+id/bt_line_data"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="第5章 数据存储"/>
+        android:layout_marginTop="15dp"
+        android:text="第6章 数据存储"/>
 
     <Button
         android:id="@+id/bt_line_content"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="第6章 内容提供器"/>
+        android:layout_marginTop="15dp"
+        android:text="第7章 内容提供器"/>
+
+    <Button
+        android:id="@+id/bt_line_net"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="第9章 网络技术"/>
 
 </LinearLayout>
