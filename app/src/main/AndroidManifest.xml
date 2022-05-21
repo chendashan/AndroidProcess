@@ -10,6 +10,7 @@
     <uses-permission android:name="android.permission.VIBRATE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
 
     <application
         android:name="org.litepal.LitePalApplication"
@@ -21,6 +22,28 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidProcess"
         android:usesCleartextTraffic="true">
+        <activity
+            android:name=".firstline.chapter10.DownloadTestActivity"
+            android:exported="false" />
+
+        <service
+            android:name=".firstline.chapter10.DownloadService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity
+            android:name=".firstline.chapter10.ServiceTestActivity"
+            android:exported="false" />
+
+        <service
+            android:name=".firstline.chapter10.MyService"
+            android:enabled="true"
+            android:exported="true" />
+        <service android:name=".firstline.chapter10.MyIntentService" />
+
+        <activity
+            android:name=".firstline.chapter10.ThreadTestActivity"
+            android:exported="false" />
         <activity
             android:name=".firstline.chapter9.JsonTestActivity"
             android:exported="false" />
