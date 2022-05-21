@@ -3,6 +3,8 @@ package com.example.androidprocess.firstline.chapter7;
 import android.os.Bundle;
 
 import com.example.androidprocess.firstline.ChapterActivity;
+import com.example.androidprocess.firstline.FirstLineCodeActivity;
+import com.example.androidprocess.firstline.chapter13.ParTitle;
 import com.example.androidprocess.firstline.chapter8.CameraAlbumActivity;
 import com.example.androidprocess.firstline.chapter8.NotificationTestActivity;
 import com.example.androidprocess.firstline.chapter8.PlayAudioActivity;
@@ -16,6 +18,11 @@ public class ChapterSevenActivity extends ChapterActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        ParTitle parTitle = getIntent().getParcelableExtra(FirstLineCodeActivity.PARAM_TITLE);
+        if (parTitle != null && parTitle.getTitle() != null) {
+            setTitle(parTitle.getTitle());
+        }
 
         addChapter("运行时权限", RunPermissionActivity.class);
         addChapter("获取联系人", ContactsTestActivity.class);

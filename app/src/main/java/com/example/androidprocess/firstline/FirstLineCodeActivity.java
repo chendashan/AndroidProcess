@@ -7,6 +7,8 @@ import android.view.View;
 import android.widget.Button;
 
 import com.example.androidprocess.R;
+import com.example.androidprocess.firstline.chapter13.ChapterTitle;
+import com.example.androidprocess.firstline.chapter13.ParTitle;
 import com.example.androidprocess.firstline.chapter3.ChapterThreeActivity;
 import com.example.androidprocess.firstline.chapter4.ChapterFourActivity;
 import com.example.androidprocess.firstline.chapter6.ChapterSixActivity;
@@ -15,6 +17,7 @@ import com.example.androidprocess.firstline.chapter9.ChapterNineActivity;
 
 public class FirstLineCodeActivity extends BaseLineActivity implements View.OnClickListener{
 
+    public static final String PARAM_TITLE = "param_title";
     public static final String TAG = "MainActivity";
 
     @Override
@@ -59,11 +62,16 @@ public class FirstLineCodeActivity extends BaseLineActivity implements View.OnCl
                 startActivity(intentFragment);
                 break;
             case R.id.bt_line_data:
+                ChapterTitle chapterTitle = new ChapterTitle(6, "第6章 数据存储");
                 Intent intentData = new Intent(this, ChapterSixActivity.class);
+                intentData.putExtra(PARAM_TITLE, chapterTitle);
                 startActivity(intentData);
                 break;
             case R.id.bt_line_content:
+                ParTitle parTitle = new ParTitle(7, "第7章 内容提供器");
+
                 Intent intentContent = new Intent(this, ChapterSevenActivity.class);
+                intentContent.putExtra(PARAM_TITLE, parTitle);
                 startActivity(intentContent);
                 break;
             case R.id.bt_line_net:

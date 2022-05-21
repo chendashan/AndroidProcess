@@ -1,5 +1,9 @@
 package com.example.androidprocess.firstline.chapter9;
 
+import android.widget.Toast;
+
+import com.example.androidprocess.MyApplication;
+
 import java.io.BufferedReader;
 import java.io.InputStream;
 import java.io.InputStreamReader;
@@ -20,6 +24,9 @@ import java.net.URL;
 public class BasicHttpUtil {
 
     public static void sendHttpRequest(String address, final HttpCallbackListener listener) {
+
+        //测试全局获取Context
+        Toast.makeText(MyApplication.getContext(), "start request", Toast.LENGTH_SHORT).show();
 
         new Thread(new Runnable() {
             @Override
