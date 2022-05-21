@@ -12,6 +12,7 @@ public class ChapterNineActivity extends ChapterActivity {
 
         addChapter("WebView的用法", WebViewTestActivity.class);
         addChapter("Http访问", HttpTestActivity.class);
+        addChapter("Json解析", JsonTestActivity.class);
 
         showChapterList();
     }

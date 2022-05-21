@@ -8,13 +8,24 @@ import android.widget.TextView;
 
 import com.example.androidprocess.R;
 
+import org.xml.sax.InputSource;
+import org.xml.sax.SAXException;
+import org.xml.sax.XMLReader;
+import org.xmlpull.v1.XmlPullParser;
+import org.xmlpull.v1.XmlPullParserException;
+import org.xmlpull.v1.XmlPullParserFactory;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
+import java.io.StringReader;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
+
+import javax.xml.parsers.ParserConfigurationException;
+import javax.xml.parsers.SAXParserFactory;
 
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
@@ -88,16 +99,77 @@ public class HttpTestActivity extends AppCompatActivity {
             try {
                 OkHttpClient client = new OkHttpClient();
                 Request request = new Request.Builder()
-                        .url("https://www.baidu.com")
+                        .url("http://10.0.2.2/get_data.xml")
                         .build();
                 Response response = client.newCall(request).execute();
                 String responseData = response.body().string();
-                showResponse(responseData);
+                //showResponse(responseData);
+                parseXMLWithPall(responseData);
+                parseXMLWithSAX(responseData);
             } catch (IOException e) {
                 e.printStackTrace();
             }
 
         }).start();
+    }
+
+    private void parseXMLWithPall(String xmlData) {
+        try {
+
+            StringBuilder stringBuilder = new StringBuilder();
+
+            XmlPullParserFactory factory = XmlPullParserFactory.newInstance();
+            XmlPullParser xmlPullParser = factory.newPullParser();
+            xmlPullParser.setInput(new StringReader(xmlData));
+            int eventType = xmlPullParser.getEventType();
+            String id = "";
+            String name = "";
+            String version = "";
+            while (eventType != XmlPullParser.END_DOCUMENT) {
+                String nodeName = xmlPullParser.getName();
+                switch (eventType) {
+                    case XmlPullParser.START_TAG:
+                        if ("id".equals(nodeName)) {
+                            id = xmlPullParser.nextText();
+                        } else if ("name".equals(nodeName)) {
+                            name = xmlPullParser.nextText();
+                        } else if ("version".equals(nodeName)) {
+                            version = xmlPullParser.nextText();
+                        }
+                        break;
+
+                    case XmlPullParser.END_TAG:
+                        if ("app".equals(nodeName)) {
+                            stringBuilder.append("id: ").append(id);
+                            stringBuilder.append(" name: ").append(name);
+                            stringBuilder.append(" version: ").append(version);
+                            stringBuilder.append("\n");
+                        }
+                        break;
+                    default:
+                        break;
+                }
+                eventType = xmlPullParser.next();
+            }
+
+            showResponse(stringBuilder.toString());
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+    }
+
+    private void parseXMLWithSAX(String xmlData) {
+        try {
+            SAXParserFactory factory = SAXParserFactory.newInstance();
+            XMLReader xmlReader = factory.newSAXParser().getXMLReader();
+            SaxContentHandler handler = new SaxContentHandler();
+            xmlReader.setContentHandler(handler);
+            xmlReader.parse(new InputSource(new StringReader(xmlData)));
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 
     private void showResponse(String response) {
