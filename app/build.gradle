@@ -16,7 +16,23 @@ android {
         versionCode 1
         versionName "1.0"
 
+        flavorDimensions "verisonCode"
+
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    signingConfigs {
+        config {
+            storeFile file(KEY_PATH)
+            storePassword KEY_PASS
+            keyAlias ALIAS_NAME
+            keyPassword ALIAS_PASS
+        }
+    }
+
+    productFlavors {
+        xiaomi {}
+        oppo {}
     }
 
     buildTypes {
@@ -25,6 +41,7 @@ android {
             minifyEnabled false
             //指定混淆使用的规则文件
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.config
         }
     }
     compileOptions {
