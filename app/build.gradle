@@ -31,7 +31,7 @@ android {
     }
 
     productFlavors {
-        xiaomi {}
+        //xiaomi {}
         //oppo {}
     }
 
