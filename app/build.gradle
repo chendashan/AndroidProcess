@@ -32,7 +32,7 @@ android {
 
     productFlavors {
         xiaomi {}
-        oppo {}
+        //oppo {}
     }
 
     buildTypes {
